@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Categoy Selevtor | API</title>
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="website icon" type="png" href="imgs/logo.png" />
+  </head>
+  <body>
+    <nav
+      class="bg-nav z-3 d-flex align-items-center justify-content-between p-2 position-absolute start-0 end-0 top-0"
+    >
+      <a href="#" class="logo">
+        <img src="imgs/logo.png" class="w-100" alt="..." />
+      </a>
+      <ul
+        class="list-unstyled d-flex align-items-center justify-content-around"
+      >
+        <li><a href="#" class="text-decoration-none text-white">Home</a></li>
+        <li>
+          <a href="#" class="text-decoration-none text-white">Reciepes</a>
+        </li>
+        <li><a href="#" class="text-decoration-none text-white">About</a></li>
+        <li><a href="#" class="text-decoration-none text-white">Blog</a></li>
+        <li><a href="#" class="text-decoration-none text-white">Contact</a></li>
+      </ul>
+    </nav>
+    <header
+      class="d-flex justify-content-center align-items-center position-relative"
+    >
+      <h1 class="text-capitalize text-white">Never miss a Reciepe!</h1>
+      <div
+        class="search w-75 d-flex mx-auto p-5 rounded-3 bg-white position-absolute bottom-0"
+      >
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="search reciepe..."
+          class="form-control"
+        />
+        <button id="searchBtn" class="w-25">search</button>
+      </div>
+    </header>
+    <section class="categories text-center p-5">
+      <div class="title w-50 mx-auto my-5">
+        <h2>Reciepe Categories</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+          quibusdam velit deleniti porro dolorem unde. Tempore, obcaecati!
+          Consectetur, eos nulla.
+        </p>
+      </div>
+      <div class="sub-cats d-flex justify-content-around">
+        <h2 class="text-black bg-h2">Meal Type</h2>
+        <h2 class="text-black bg-h2">Diet&Health</h2>
+        <h2 class="text-black bg-h2">Ingredient</h2>
+        <h2 class="text-black bg-h2">Dish Type</h2>
+      </div>
+      <div class="container my-4">
+        <div class="row" id="reciepesRow"></div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
